@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CubeFormulas.CubeVolume">
+
+    <TextView
+    android:id="@+id/txtCubeVolumeCalculator"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="64dp"
+    android:text="Cube Volume Calculator"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.498"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCubeVolumeEdge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="44dp"
+        android:text="Edge"
+        app:layout_constraintStart_toStartOf="@+id/inputCubeVolumeEdge"
+        app:layout_constraintTop_toBottomOf="@+id/txtCubeVolumeCalculator" />
+
+    <EditText
+        android:id="@+id/inputCubeVolumeEdge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCubeVolumeCalculator"
+        app:layout_constraintStart_toStartOf="@+id/txtCubeVolumeCalculator"
+        app:layout_constraintTop_toBottomOf="@+id/txtCubeVolumeCalculator"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtCubeVolumeAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Cube Volume:"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/inputCubeVolumeEdge"
+        app:layout_constraintStart_toStartOf="@+id/inputCubeVolumeEdge"
+        app:layout_constraintTop_toBottomOf="@+id/inputCubeVolumeEdge" />
+
+    <Button
+        android:id="@+id/btnCubeVolumeCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/txtCubeVolumeAnswer"
+        app:layout_constraintStart_toStartOf="@+id/txtCubeVolumeAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/txtCubeVolumeAnswer" />
+
+    <Button
+        android:id="@+id/btnCubeVolumeBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/btnCubeVolumeCalculate"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="@+id/btnCubeVolumeCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/btnCubeVolumeCalculate" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="albastro.decision.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication">
+        <activity
+            android:name=".SphereFormulas.SphereVolume"
+            android:exported="false" />
+        <activity
+            android:name=".SphereFormulas.SphereArea"
+            android:exported="false" />
+        <activity
+            android:name=".PyramidFormulas.PyramidVolume"
+            android:exported="false" />
+        <activity
+            android:name=".PyramidFormulas.PyramidArea"
+            android:exported="false" />
+        <activity
+            android:name=".CylinderFormulas.CylinderVolume"
+            android:exported="false" />
+        <activity
+            android:name=".CylinderFormulas.CylinderArea"
+            android:exported="false" />
+        <activity
+            android:name=".CubeFormulas.CubeVolume"
+            android:exported="false" />
+        <activity
+            android:name=".CubeFormulas.CubeArea"
+            android:exported="false" />
+        <activity
+            android:name=".ConeFormulas.ConeVolume"
+            android:exported="false" />
+        <activity
+            android:name=".ConeFormulas.ConeArea"
+            android:exported="false" />
+        <activity
+            android:name=".pyramid"
+            android:exported="false" />
+        <activity
+            android:name=".cylinder"
+            android:exported="false" />
+        <activity
+            android:name=".cube"
+            android:exported="false" />
+        <activity
+            android:name=".Cone"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

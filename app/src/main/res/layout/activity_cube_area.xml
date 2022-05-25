@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CubeFormulas.CubeArea">
+
+    <TextView
+        android:id="@+id/txtCubeAreaCalculator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Cube Area Calculator"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtCubeAreaEdge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="44dp"
+        android:text="Edge"
+        app:layout_constraintStart_toStartOf="@+id/inputCubeAreaEdge"
+        app:layout_constraintTop_toBottomOf="@+id/txtCubeAreaCalculator" />
+
+    <EditText
+        android:id="@+id/inputCubeAreaEdge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:text="0.0"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtCubeAreaCalculator"
+        app:layout_constraintStart_toStartOf="@+id/txtCubeAreaCalculator"
+        app:layout_constraintTop_toBottomOf="@+id/txtCubeAreaCalculator"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/txtCubeAreaAnswer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Cube Area:"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/inputCubeAreaEdge"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="@+id/inputCubeAreaEdge"
+        app:layout_constraintTop_toBottomOf="@+id/inputCubeAreaEdge" />
+
+    <Button
+        android:id="@+id/btnCubeAreaCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:text="Calculate"
+        app:layout_constraintEnd_toEndOf="@+id/txtCubeAreaAnswer"
+        app:layout_constraintStart_toStartOf="@+id/txtCubeAreaAnswer"
+        app:layout_constraintTop_toBottomOf="@+id/txtCubeAreaAnswer" />
+
+    <Button
+        android:id="@+id/btnCubeAreaBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/btnCubeAreaCalculate"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="@+id/btnCubeAreaCalculate"
+        app:layout_constraintTop_toBottomOf="@+id/btnCubeAreaCalculate" />
+</androidx.constraintlayout.widget.ConstraintLayout>
